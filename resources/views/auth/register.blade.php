@@ -95,8 +95,7 @@
       </div>
 
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <img src="https://i.pinimg.com/564x/fe/db/df/fedbdfad93c94cb6e0832b5b504e7f3b.jpg" class="w-100 rounded-4 shadow-4"
-          alt="" />
+        <img src="{{ asset('assets/img/login.png') }}" alt="Moça lendo" width='450' style="margin-left: 100px">
       </div>
     </div>
   </div>

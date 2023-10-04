@@ -1,146 +1,132 @@
 @extends('layouts.app')
 
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Impact Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css" rel="stylesheet') }}">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
 @section('content')
-<section class="vh-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
-            <div class="card-body py-4 px-4 px-md-5">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+        <div class="container position-relative">
+            <div class="row gy-5" data-aos="fade-in">
+                <div
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <h2 id='texto'>Bem vindo ao ToDo List</h2>
+                    <p id='texto'>Organize suas tarefas e pare de procrastinar :)</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="/crialista" class="btn-get-started" id='texto btn'>Criar Lista</a>
 
-              <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
-                <i class="fas fa-check-square me-1"></i>
-                <u>Minhas Tarefas</u>
-              </p>
-
-              <div class="pb-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="d-flex flex-row align-items-center">
-                      <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
-                        placeholder="Adicionar tarefas...">
-                      <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
-                          class="fas fa-calendar-alt fa-lg me-3"></i></a>
-                      <div>
-                        <button type="button" class="btn btn-primary">+</button>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-
-              <hr class="my-4">
-
-              <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
-                <p class="small mb-0 me-2 text-muted">Filtro</p>
-                <select class="select">
-                  <option value="1">Todas</option>
-                  <option value="2">Completas</option>
-                  <option value="3">Incompletas</option>
-
-                </select>
-                <p class="small mb-0 ms-4 me-2 text-muted">Ordenar</p>
-                <select class="select">
-                  <option value="1">Added date</option>
-                  <option value="2">Due date</option>
-                </select>
-                <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending"><i
-                    class="fas fa-sort-amount-down-alt ms-2"></i></a>
-              </div>
-
-              <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                <li
-                  class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="form-check">
-                    <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
-                      aria-label="..." checked />
-                  </div>
-                </li>
-                <li
-                  class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
-                  <p class="lead fw-normal mb-0">Buy groceries for next week</p>
-                </li>
-                <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="d-flex flex-row justify-content-end mb-1">
-                    <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
-                        class="fas fa-pencil-alt me-3"></i></a>
-                    <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                        class="fas fa-trash-alt"></i></a>
-                  </div>
-                  <div class="text-end text-muted">
-                    <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                      <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <ul class="list-group list-group-horizontal rounded-0">
-                <li
-                  class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="form-check">
-                    <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked2"
-                      aria-label="..." />
-                  </div>
-                </li>
-                <li
-                  class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
-                  <p class="lead fw-normal mb-0">Renew car insurance</p>
-                </li>
-                <li class="list-group-item px-3 py-1 d-flex align-items-center border-0 bg-transparent">
-                  <div
-                    class="py-2 px-3 me-2 border border-warning rounded-3 d-flex align-items-center bg-light">
-                    <p class="small mb-0">
-                      <a href="#!" data-mdb-toggle="tooltip" title="Due on date">
-                        <i class="fas fa-hourglass-half me-2 text-warning"></i>
-                      </a>
-                      28th Jun 2020
-                    </p>
-                  </div>
-                </li>
-                <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="d-flex flex-row justify-content-end mb-1">
-                    <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
-                        class="fas fa-pencil-alt me-3"></i></a>
-                    <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                        class="fas fa-trash-alt"></i></a>
-                  </div>
-                  <div class="text-end text-muted">
-                    <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                      <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <ul class="list-group list-group-horizontal rounded-0 mb-2">
-                <li
-                  class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="form-check">
-                    <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked3"
-                      aria-label="..." />
-                  </div>
-                </li>
-                <li
-                  class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
-                  <p class="lead fw-normal mb-0 bg-light w-100 ms-n2 ps-2 py-1 rounded">Sign up for online
-                    course</p>
-                </li>
-                <li class="list-group-item ps-3 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="d-flex flex-row justify-content-end mb-1">
-                    <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                        class="fas fa-trash-alt"></i></a>
-                  </div>
-                  <div class="text-end text-muted">
-                    <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                      <p class="small mb-0"><i class="fas fa-info-circle me-2"></i>28th Jun 2020</p>
-                    </a>
-                  </div>
-                </li>
-              </ul>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="{{ asset('assets/img/hero-bg.png') }}" class="img-fluid" alt="" data-aos="zoom-out"
+                        data-aos-delay="100" width="550">
+                </div>
 
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+
+        <div class="icon-boxes position-relative">
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+                    <h4>Suas Listas:</h4>
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="list-group">
+                            <a href="/lista" class="list-group-item list-group-item-action cor" aria-current="true">
+                                Aniversário
+                            </a>
+                            <button type="button" class="list-group-item list-group-item-action">Buscar o Bolo</button>
+                            <button type="button" class="list-group-item list-group-item-action">Arrumar a
+                                decoração</button>
+                            <button type="button" class="list-group-item list-group-item-action">Comprar as
+                                bebidas</button>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action cor" aria-current="true">
+                                Escola
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">Fazer trabalho do Rogi</button>
+                            <button type="button" class="list-group-item list-group-item-action">Prova de biologia</button>
+                            <button type="button" class="list-group-item list-group-item-action">Prova de quimica</button>
+                            <button type="button" class="list-group-item list-group-item-action">Redação</button>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action cor" aria-current="true">
+                                Casa
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">Lavar a louça</button>
+                            <button type="button" class="list-group-item list-group-item-action">Arrumar o quarto</button>
+                            <button type="button" class="list-group-item list-group-item-action">Comprar as
+                                bebidas</button>
+                        </div>
+                    </div><!--End Icon Box -->
+
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 @endsection

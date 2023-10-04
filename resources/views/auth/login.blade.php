@@ -41,7 +41,7 @@
 
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
+              <button type="submit" class=" custom-button">
                 Sign in
               </button>
             </form>
@@ -50,8 +50,7 @@
       </div>
 
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <img src="https://i.pinimg.com/564x/f6/e8/e7/f6e8e723a696f7fd5126b7ca99ba0b92.jpg" class="w-100 rounded-4 shadow-4"
-          alt="" />
+        <img src="{{ asset('assets/img/login.png') }}" alt="Moça lendo" width='450' style="margin-left: 100px">
       </div>
     </div>
   </div>

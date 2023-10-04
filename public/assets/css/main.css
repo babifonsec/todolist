@@ -26,8 +26,8 @@
 
 :root {
     --color-default: #222222;
-    --color-primary: #008374;
-    --color-secondary: #f85a40;
+    --color-primary: #0e2430;
+    --color-secondary: #fc3a51;
 }
 
 
@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-    color: #00b6a1;
+    color: #fc3a51;
     text-decoration: none;
 }
 
@@ -68,6 +68,45 @@ h4,
 h5,
 h6 {
     font-family: var(--font-primary);
+}
+
+
+/* Adicione isso ao seu arquivo CSS personalizado */
+
+.list-group {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cor {
+    background-color: #0e2430 !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.titulo {
+    background-color: #0e2430 !important;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+}
+
+.cor:hover {
+    background-color: #fc3a51;
+    color: #fff;
+}
+
+.custom-button {
+    background-color: #0e2430;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 500px;
+    text-decoration: none;
 }
 
 
@@ -200,7 +239,7 @@ section {
 }
 
 .scroll-top:hover {
-    background: rgba(248, 90, 64, 0.8);
+    background: #fc3a51;
     color: #fff;
 }
 
@@ -263,7 +302,7 @@ section {
 --------------------------------------------------------------*/
 
 .topbar {
-    background: #00796b;
+    background: #eb71a0;
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
@@ -342,7 +381,7 @@ section {
 }
 
 .header .logo h1 span {
-    color: #f96f59;
+    color: #f35584;
 }
 
 .sticked-header-offset {
@@ -443,7 +482,7 @@ section {
         font-size: 15px;
         text-transform: none;
         font-weight: 600;
-        color: #006a5d;
+        color: #eb71a0;
     }
     .navbar .dropdown ul a i {
         font-size: 12px;
@@ -508,7 +547,7 @@ section {
         inset: 0;
         padding: 50px 0 10px 0;
         margin: 0;
-        background: rgba(0, 131, 116, 0.9);
+        background: #eb71a0;
         overflow-y: auto;
         transition: 0.3s;
         z-index: 9998;
@@ -558,7 +597,7 @@ section {
         padding: 10px 0;
         margin: 10px 20px;
         transition: all 0.5s ease-in-out;
-        background-color: #007466;
+        background-color: #eb71a0;
         border: 1px solid #006459;
     }
     .navbar .dropdown>.dropdown-active,
@@ -595,7 +634,7 @@ section {
         content: "";
         position: fixed;
         inset: 0;
-        background: rgba(0, 106, 93, 0.8);
+        background: #eb71a0;
         z-index: 9996;
     }
 }
@@ -1001,7 +1040,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-    background: #00b6a1;
+    background: #eb71a0;
 }
 
 .services .service-item:hover h3 {
@@ -1057,7 +1096,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-    color: #009d8b;
+    color: #eb71a0;
     font-size: 26px;
     line-height: 0;
 }
@@ -1301,7 +1340,7 @@ section {
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-    background: #009d8b;
+    background: #eb71a0;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1345,7 +1384,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-    color: #009d8b;
+    color: #eb71a0;
     font-size: 26px;
     line-height: 0;
 }
@@ -1738,7 +1777,7 @@ section {
 
 .contact .info-item {
     width: 100%;
-    background-color: #009282;
+    background-color: #0e2430;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -1869,7 +1908,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-    background: rgba(0, 131, 116, 0.8);
+    background: #eb71a0;
 }
 
 @keyframes animate-loading {
@@ -1893,7 +1932,7 @@ section {
 .hero {
     width: 100%;
     position: relative;
-    background: #f6f6f6;
+    background: #ffffff;
     padding: 60px 0 0 0;
 }
 
@@ -1911,13 +1950,13 @@ section {
 }
 
 .hero p {
-    color: #f6f6f6;
+    color: #ffffff;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
 #btn {
-    background-color: #008d7d;
+    background-color: #eb71a0;
 }
 
 .hero .btn-get-started {
@@ -1989,7 +2028,7 @@ section {
     padding: 60px 30px;
     position: relative;
     overflow: hidden;
-    background: #008d7d;
+    background: #0e2430;
     box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
@@ -2021,7 +2060,7 @@ section {
 }
 
 .hero .icon-box:hover {
-    background: #009786;
+    background: #fc3a51;
 }
 
 .hero .icon-box:hover .title a,
@@ -2380,7 +2419,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-    background: rgba(0, 131, 116, 0.8);
+    background: #eb71a0;
 }
 
 .blog .sidebar .categories ul {
@@ -2560,7 +2599,7 @@ section {
 
 .blog .comments .reply-form input:focus {
     box-shadow: none;
-    border-color: rgba(0, 131, 116, 0.8);
+    border-color: #eb71a0;
 }
 
 .blog .comments .reply-form textarea {
@@ -2571,7 +2610,7 @@ section {
 
 .blog .comments .reply-form textarea:focus {
     box-shadow: none;
-    border-color: rgba(0, 131, 116, 0.8);
+    border-color: #eb71a0;
 }
 
 .blog .comments .reply-form .form-group {

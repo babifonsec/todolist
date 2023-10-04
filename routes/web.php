@@ -19,11 +19,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', function () {
-    return view('index');
+Route::get('/crialista', function () {
+    return view('lista.create');
+});
+
+Route::get('/tarefa', function () {
+    return view('tarefa.create');
+});
+
+Route::get('/lista', function () {
+    return view('tarefa.index');
 });
 
 Auth::routes();
+
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
