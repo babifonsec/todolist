@@ -11,7 +11,7 @@
             <div class="row gx-lg-0 gy-4">
                 <div class="col-lg-4">
                     <div>
-                        <img src="{{ asset('assets/img/lista.png') }}" alt="" width='330'>
+                        <img src="{{ asset('assets/img/lista.png') }}" alt="" width='300'>
                     </div>
                 </div>
                 <div class="col-lg-8">

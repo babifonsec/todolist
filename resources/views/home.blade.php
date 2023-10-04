@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Impact Bootstrap Template - Index</title>
+    <title>ToDo List</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
                     <img src="{{ asset('assets/img/hero-bg.png') }}" class="img-fluid" alt="" data-aos="zoom-out"
-                        data-aos-delay="100" width="550">
+                        data-aos-delay="100" width="500">
                 </div>
 
             </div>
