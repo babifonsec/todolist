@@ -78,6 +78,10 @@
                             @if (Route::currentRouteName() == 'login')
                                 <a href="{{ route('register') }}">Registro</a>
                             @endif
+                            @if (Route::currentRouteName() == '')
+                            <a href="{{ route('login') }}">Login</a>
+                            <a href="{{ route('register') }}">Registro</a>
+                        @endif
                         @endauth
                     </div>
                 </nav>

@@ -73,6 +73,10 @@ h6 {
 
 /* Adicione isso ao seu arquivo CSS personalizado */
 
+.espaco {
+    height: 100px;
+}
+
 .list-group {
     max-height: 300px;
     overflow-y: auto;

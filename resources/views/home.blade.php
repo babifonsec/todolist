@@ -49,10 +49,17 @@
                     class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
                     <h2 id='texto'>Bem vindo ao ToDo List</h2>
                     <p id='texto'>Organize suas tarefas e pare de procrastinar :)</p>
+                    @auth
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <a href="/crialista" class="btn-get-started" id='texto btn'>Criar Lista</a>
 
                     </div>
+                    @else
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="/login" class="btn-get-started" id='texto btn'>Criar Lista</a>
+
+                    </div>
+                    @endauth
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
                     <img src="{{ asset('assets/img/hero-bg.png') }}" class="img-fluid" alt="" data-aos="zoom-out"
@@ -61,8 +68,9 @@
 
             </div>
         </div>
+@auth
 
-        <div class="icon-boxes position-relative">
+        <div class="icon-boxes position-relative" style="margin-top: -5%">
             <div class="container position-relative">
                 <div class="row gy-4 mt-5">
                     <h4>Suas Listas:</h4>
@@ -107,7 +115,9 @@
                 </div>
             </div>
         </div>
-
+        @else
+        <div class="espaco"> </div>
+        @endauth
         </div>
     </section>
 
