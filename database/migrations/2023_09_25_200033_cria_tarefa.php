@@ -20,7 +20,7 @@ class CriaTarefa extends Migration
             $table->string('descricao')->nullable();
             $table->dateTime('dataCriacao');
             $table->dateTime('dataConclusao')->nullable();
-            $table->string('status')->nullable();
+            $table->boolean('status')->nullable();
             $table->unsignedBigInteger('id_lista');
             $table->foreign('id_lista')->references('id')->on('lista');
             $table->timestamps();
